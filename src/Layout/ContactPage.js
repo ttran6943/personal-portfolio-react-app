@@ -1,20 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { StyleRoot } from "radium";
+import animationStyles from "../Components/animationStyles";
+import "../App.css";
 
 function ContactPage() {
-  return (
-    <div className="resume-page">
-      <h3>Contact Me</h3>
-      <p>
-        Please do not hesitate to reach out to me! I am looking forward to
-        connecting with you.
-      </p>
+  function displayContactButtons() {
+    return (
       <div className="contact-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">Email</a>
-        <a href="#">GitHub</a>
+        <button
+          onClick={
+            (Event = () =>
+              window.open("https://www.linkedin.com/in/tonyltran/"))
+          }
+          type="button"
+          class="btn btn-secondary"
+        >
+          LinkedIn
+        </button>
+        <button
+          onClick={(Event = () => window.open("https://github.com/ttran6943"))}
+          type="button"
+          class="btn btn-secondary mx-2"
+        >
+          GitHub
+        </button>
       </div>
-    </div>
+    );
+  }
+  return (
+    <StyleRoot>
+      <div className="resume-page col mx-4 my-4" style={animationStyles.fadeIn}>
+        <h3>Contact Me</h3>
+        <p>
+          Please do not hesitate to reach out to me! I am looking forward to
+          connecting with you.
+        </p>
+        <p>Email: tranltony8@gmail.com</p>
+        <p>Phone: 858.216.6128</p>
+        {displayContactButtons()}
+      </div>
+    </StyleRoot>
   );
 }
 

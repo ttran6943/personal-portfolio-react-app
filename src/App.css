@@ -1,0 +1,37 @@
+.home-greet {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 510px;
+
+}
+
+body {
+    padding-bottom: 60px;
+}
+
+.greeting-text {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.resume-page {}
+
+.thumbnail-text {
+  text-align: center;
+}
+
+.backend {
+  justify-content: center;
+}
+
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2,
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}

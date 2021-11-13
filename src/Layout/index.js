@@ -6,6 +6,8 @@ import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Resume from "./Resume";
 import ContactPage from "./ContactPage";
+import Footer from "./Footer";
+import "../App.css";
 
 function Layout() {
     return (
@@ -18,6 +20,7 @@ function Layout() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<ContactPage />} />
       </Switch>
+      <Footer />
       </>
     );
   }
