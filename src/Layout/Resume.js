@@ -10,7 +10,7 @@ function Resume() {
         <div className="row">
           <div className="col-3 stack-list">
             <h3>Resume</h3>
-            <h4>Front-End Stack</h4>
+            <h5>Front-End Stack</h5>
             <ul>
               <li>JavaScript ES6</li>
               <li>React.js</li>
@@ -19,14 +19,14 @@ function Resume() {
               <li>HTML5</li>
               <li>CSS3</li>
             </ul>
-            <h4>Back-End Stack</h4>
+            <h5>Back-End Stack</h5>
             <ul>
               <li>Node.js</li>
               <li>PostgreSQL</li>
               <li>Express</li>
               <li>Knex</li>
             </ul>
-            <h4>Other</h4>
+            <h5>Other</h5>
             <ul>
               <li>Mocha</li>
               <li>Chai</li>
@@ -36,6 +36,18 @@ function Resume() {
             </ul>
           </div>
         </div>
+        <button
+          onClick={
+            (Event = () =>
+              window.open(
+                "https://docs.google.com/document/d/1yNQiRzUNh3V6YQ8e_yM0tm3YADzh0sVw/edit?usp=sharing&ouid=101215602755905117141&rtpof=true&sd=true"
+              ))
+          }
+          type="button"
+          class="btn btn-secondary"
+        >
+          Link to Resume
+        </button>
       </div>
     </StyleRoot>
   );
