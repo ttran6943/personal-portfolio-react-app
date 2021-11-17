@@ -3,13 +3,19 @@ import { StyleRoot } from "radium";
 import animationStyles from "../Components/animationStyles"; 
 import "../App.css";
 import corgibutt from "../imgs/corgibutt.jfif";
-
+import Typing from "react-typing-animation";
 
 function HomePage() {
+  const AnimatedTyping = () => (
+    <Typing>
+      <h2>Hey there! Let's connect!</h2>
+    </Typing>
+  );
+
   return (
     <StyleRoot>
       <div className="home-greet" style={animationStyles.fadeIn}>
-        <h2 class="greeting-text">Hey there! Let's connect!</h2>
+        {AnimatedTyping()}
         <img class="col-5" src={corgibutt}/>
       </div>
     </StyleRoot>
