@@ -39,6 +39,10 @@ h3 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+.headshot {
+  width: 10%;
+}
+
 @media only screen and (max-width: 600px) {
   .mobile-header {
     text-align: center;

@@ -2,6 +2,7 @@ import React from "react";
 import { StyleRoot } from "radium";
 import animationStyles from "../Components/animationStyles";
 import "../App.css";
+import resume from "../documents/resume.pdf"
 
 function Resume() {
   return (
@@ -34,20 +35,33 @@ function Resume() {
               <li>Heroku</li>
               <li>Vercel</li>
             </ul>
+            <button
+              onClick={
+                (Event = () =>
+                  window.open(
+                    "https://docs.google.com/document/d/1yNQiRzUNh3V6YQ8e_yM0tm3YADzh0sVw/edit?usp=sharing&ouid=101215602755905117141&rtpof=true&sd=true"
+                  ))
+              }
+              type="button"
+              class="btn btn-secondary"
+            >
+              Link to Resume
+            </button>
           </div>
+          <object
+            data={resume}
+            type="application/pdf"
+            width="100%"
+            height="560"
+            className="col-8 mx-3 my-3"
+          >
+            <p>
+              Resume link: https://docs.google.com/document/d/1yNQiRzUNh3V6YQ8e_yM0tm3YADzh0sVw/edit?usp=sharing&ouid=101215602755905117141&rtpof=true&sd=true
+              <a href="https://docs.google.com/document/d/1yNQiRzUNh3V6YQ8e_yM0tm3YADzh0sVw/edit?usp=sharing&ouid=101215602755905117141&rtpof=true&sd=true">
+              </a>
+            </p>
+          </object>
         </div>
-        <button
-          onClick={
-            (Event = () =>
-              window.open(
-                "https://docs.google.com/document/d/1yNQiRzUNh3V6YQ8e_yM0tm3YADzh0sVw/edit?usp=sharing&ouid=101215602755905117141&rtpof=true&sd=true"
-              ))
-          }
-          type="button"
-          class="btn btn-secondary"
-        >
-          Link to Resume
-        </button>
       </div>
     </StyleRoot>
   );

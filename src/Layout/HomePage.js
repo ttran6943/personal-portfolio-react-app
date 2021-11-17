@@ -3,6 +3,7 @@ import { StyleRoot } from "radium";
 import animationStyles from "../Components/animationStyles"; 
 import "../App.css";
 import corgibutt from "../imgs/corgibutt.jfif";
+import homegif from "../imgs/homepage.gif";
 import Typing from "react-typing-animation";
 
 function HomePage() {
@@ -16,7 +17,7 @@ function HomePage() {
     <StyleRoot>
       <div className="home-greet" style={animationStyles.fadeIn}>
         {AnimatedTyping()}
-        <img class="col-5" src={corgibutt}/>
+        <img class="col-5" src={homegif}/>
       </div>
     </StyleRoot>
   );

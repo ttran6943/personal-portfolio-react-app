@@ -25,6 +25,7 @@ function Header() {
         >
           <h1 className="Name">Tony Tran</h1>
           <h3 className="Subname">Software Developer</h3>
+          <hr />
         </div>
       </StyleRoot>
     </>

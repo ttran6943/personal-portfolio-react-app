@@ -11,7 +11,7 @@ const toggleMenu = ({ isOpen }) => {
 
 const BurgerMenu = () => {
   return (
-    <Menu noOverlay onStateChange={toggleMenu}>
+    <Menu onStateChange={toggleMenu}>
       <a className="menu-item" href="/">
         Home
       </a>
