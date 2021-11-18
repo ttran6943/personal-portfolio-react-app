@@ -12,7 +12,7 @@ import "../App.css";
 function Projects() {
   const [frontIsShowing, setFrontIsShowing] = useState(true);
 
-  function handleToggle() {
+  const handleToggle = () => {
     if (frontIsShowing === true) {
       setFrontIsShowing(false);
     } else {
@@ -20,7 +20,7 @@ function Projects() {
     }
   }
 
-  function frontEndList() {
+  const frontEndList = () => {
     return (
       <div className="row">
         <div className="col-4">
@@ -39,7 +39,7 @@ function Projects() {
     );
   }
 
-  function backEndList() {
+  const backEndList = () => {
     return (
       <div className="row backend">
         <div className="col-4">
@@ -54,7 +54,7 @@ function Projects() {
     );
   }
 
-  function toggleButtons() {
+  const toggleButtons = () => {
     if (frontIsShowing === true) {
       return (
         <div class="btn-group mb-3" role="group" aria-label="Basic example">

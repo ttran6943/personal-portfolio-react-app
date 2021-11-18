@@ -4,7 +4,7 @@ import animationStyles from "../Components/animationStyles";
 import "../App.css";
 
 function ContactPage() {
-  function displayContactButtons() {
+  const displayContactButtons = () => {
     return (
       <div className="contact-links">
         <button
@@ -26,10 +26,11 @@ function ContactPage() {
         </button>
       </div>
     );
-  }
-  return (
-    <StyleRoot>
-      <div className="resume-page col mx-4 my-4" style={animationStyles.fadeIn}>
+  };
+
+  const contactText = () => {
+    return (
+      <>
         <h3>Contact Me</h3>
         <p>
           Please do not hesitate to reach out to me! I am looking forward to
@@ -37,6 +38,14 @@ function ContactPage() {
         </p>
         <p>Email: tranltony8@gmail.com</p>
         <p>Phone: 858.216.6128</p>
+      </>
+    );
+  };
+
+  return (
+    <StyleRoot>
+      <div className="resume-page col mx-4 my-4" style={animationStyles.fadeIn}>
+        {contactText()}
         {displayContactButtons()}
       </div>
     </StyleRoot>

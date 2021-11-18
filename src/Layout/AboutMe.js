@@ -6,14 +6,14 @@ import "../App.css";
 import headshot from "../imgs/headshot.jpeg";
 
 function AboutMe() {
-  return (
-    <StyleRoot>
+  const aboutMeText = () => {
+    return (
       <div className="row" style={animationStyles.fadeIn}>
         <div className="col-7 about-me mx-4 my-3">
           <h3>About Me</h3>
           <p>
-            Hi there! My name is Tony and I am a full-stack software developer based in Los
-            Angeles, California. 
+            Hi there! My name is Tony and I am a full-stack software developer
+            based in Los Angeles, California.
           </p>
           <p>
             I am UCLA Bruin pursuing a degree in Geology, B.S. While I share
@@ -50,10 +50,12 @@ function AboutMe() {
             <li>Returning to You - Seven Lions, Andrew Bayer, Alison May</li>
           </ul>
         </div>
-        <img className="col-4 my-4" src={headshot} height="100%"/>
+        <img className="col-4 my-4" src={headshot} height="100%" />
       </div>
-    </StyleRoot>
-  );
+    );
+  }
+
+  return <StyleRoot>{aboutMeText()}</StyleRoot>;
 }
 
 export default AboutMe;

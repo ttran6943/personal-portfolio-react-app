@@ -11,6 +11,20 @@ function Header() {
       menuWrap.setAttribute("aria-hidden", true);
     }
   }, []);
+
+  const headerCenterText = () => {
+    return (
+      <div
+        className="Header mobile-header mx-4 my-3"
+        style={animationStyles.fadeIn}
+      >
+        <h1 className="Name">Tony Tran</h1>
+        <h3 className="Subname">Software Developer</h3>
+        <hr />
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="App">
@@ -18,16 +32,7 @@ function Header() {
           <BurgerMenu />
         </div>
       </div>
-      <StyleRoot>
-        <div
-          className="Header mobile-header mx-4 my-3"
-          style={animationStyles.fadeIn}
-        >
-          <h1 className="Name">Tony Tran</h1>
-          <h3 className="Subname">Software Developer</h3>
-          <hr />
-        </div>
-      </StyleRoot>
+      <StyleRoot>{headerCenterText()}</StyleRoot>
     </>
   );
 }

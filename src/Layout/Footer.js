@@ -1,7 +1,6 @@
 import React from "react";
 
 function Footer() {
-  
   return (
     <footer class="fixed-bottom bg-light text-center text-lg-start">
       <div class="text-center p-3">
