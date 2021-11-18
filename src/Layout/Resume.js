@@ -47,7 +47,7 @@ function Resume() {
         type="application/pdf"
         width="100%"
         height="560"
-        className="col-8 mx-3 my-3"
+        className="col-lg-8 col-md-8 col-sm-12 mx-3 my-3"
       >
         <p>
           Resume link:
@@ -62,7 +62,7 @@ function Resume() {
     <StyleRoot>
       <div className="resume-page mx-4 my-3" style={animationStyles.fadeIn}>
         <div className="row">
-          <div className="col-3 stack-list">
+          <div className="col-lg-3 col-md-3 col-sm-12 stack-list">
             {stackList()}
             {linkedButton(resumeURL, "Link to Resume")}
           </div>

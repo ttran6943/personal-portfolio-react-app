@@ -9,7 +9,7 @@ function AboutMe() {
   const aboutMeText = () => {
     return (
       <div className="row" style={animationStyles.fadeIn}>
-        <div className="col-7 about-me mx-4 my-3">
+        <div className="col-lg-7 col-md-7 col-sm-6 about-me mx-4 my-3">
           <h3>About Me</h3>
           <p>
             Hi there! My name is Tony and I am a full-stack software developer
@@ -50,7 +50,7 @@ function AboutMe() {
             <li>Returning to You - Seven Lions, Andrew Bayer, Alison May</li>
           </ul>
         </div>
-        <img className="col-4 my-4" src={headshot} height="100%" />
+        <img className="col-lg-4 col-md-3 col-sm-4 my-4 mx-3" src={headshot} height="100%" />
       </div>
     );
   }

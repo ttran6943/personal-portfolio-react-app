@@ -23,7 +23,7 @@ function Projects() {
   const frontEndList = () => {
     return (
       <div className="row">
-        <div className="col-4">
+        <div className="col-lg-4 col-md-4 col-sm-12 my-3">
           <img className="col-12 stack-images" src={flashcards} />
           <h5 className="thumbnail-text">Flashcard-o-Matic</h5>
           {linkedButton(
@@ -31,17 +31,17 @@ function Projects() {
             "GitHub Link"
           )}
         </div>
-        <div className="col-4">
+        <div className="col-lg-4 col-md-4 col-sm-12 my-3">
           <img className="col-12 stack-images" src={thinkfulCupid} />
           <h5 className="thumbnail-text">ThinkfulCupid</h5>
           <div className="row">
-            <div className="col mx-3">
+            <div className="col mx-3 my-3">
               {linkedButton(
                 "https://github.com/ttran6943/thinkfulCupid",
                 "GitHub Link"
               )}
             </div>
-            <div className="col mx-3">
+            <div className="col mx-3 my-3">
               {linkedButton(
                 "https://ttran6943.github.io/thinkfulCupid/",
                 "Live Demo"
@@ -49,7 +49,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-lg-4 col-md-4 col-sm-12 my-3">
           <img className="col-12 stack-images" src={pomodoro} />
           <h5 className="thumbnail-text">Pomodoro Timer</h5>
           {linkedButton(
@@ -64,7 +64,7 @@ function Projects() {
   const backEndList = () => {
     return (
       <div className="row backend">
-        <div className="col-4">
+        <div className="col-lg-4 col-md-4 col-sm-12 my-3">
           <img className="col-12 stack-images" src={movies} />
           <h5 className="thumbnail-text">WeLoveMovies</h5>
           <div className="col mx-3">
@@ -86,7 +86,7 @@ function Projects() {
             )}
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-lg-4 col-md-4 col-sm-12 my-3">
           <img className="col-12 stack-images" src={grubdash} />
           <h5 className="thumbnail-text">GrubDash</h5>
           {linkedButton(
