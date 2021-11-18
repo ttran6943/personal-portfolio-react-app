@@ -18,12 +18,22 @@ function Header() {
         className="Header mobile-header mx-4 my-3"
         style={animationStyles.fadeIn}
       >
-        <h1 className="Name">Tony Tran</h1>
-        <h3 className="Subname">Software Developer</h3>
+        <h1
+          onClick={(Event = () => window.location.replace("/"))}
+          className="Name"
+        >
+          Tony Tran
+        </h1>
+        <h3
+          onClick={(Event = () => window.location.replace("/"))}
+          className="Subname"
+        >
+          Software Developer
+        </h3>
         <hr />
       </div>
     );
-  }
+  };
 
   return (
     <>

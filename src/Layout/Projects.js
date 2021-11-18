@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleRoot } from "radium";
 import animationStyles from "../Components/animationStyles";
 import flashcards from "../imgs/flashcards.png";
 import movies from "../imgs/welovemovies.png";
 import thinkfulCupid from "../imgs/thinkfulcupid.png";
 import pomodoro from "../imgs/pomodoro.PNG";
-import { useState } from "react";
 import grubdash from "../imgs/GrubDash.png";
 import "../App.css";
+import linkedButton from "../Components/buttonLink";
 
 function Projects() {
   const [frontIsShowing, setFrontIsShowing] = useState(true);
@@ -18,54 +18,98 @@ function Projects() {
     } else {
       setFrontIsShowing(true);
     }
-  }
+  };
 
   const frontEndList = () => {
     return (
       <div className="row">
         <div className="col-4">
           <img className="col-12 stack-images" src={flashcards} />
-          <p className="thumbnail-text">Flashcard-o-Matic</p>
+          <h5 className="thumbnail-text">Flashcard-o-Matic</h5>
+          {linkedButton(
+            "https://github.com/ttran6943/Flashcard-O-Matic",
+            "GitHub Link"
+          )}
         </div>
         <div className="col-4">
           <img className="col-12 stack-images" src={thinkfulCupid} />
-          <p className="thumbnail-text">ThinkfulCupid</p>
+          <h5 className="thumbnail-text">ThinkfulCupid</h5>
+          <div className="row">
+            <div className="col mx-3">
+              {linkedButton(
+                "https://github.com/ttran6943/thinkfulCupid",
+                "GitHub Link"
+              )}
+            </div>
+            <div className="col mx-3">
+              {linkedButton(
+                "https://ttran6943.github.io/thinkfulCupid/",
+                "Live Demo"
+              )}
+            </div>
+          </div>
         </div>
         <div className="col-4">
           <img className="col-12 stack-images" src={pomodoro} />
-          <p className="thumbnail-text">Pomodoro Timer</p>
+          <h5 className="thumbnail-text">Pomodoro Timer</h5>
+          {linkedButton(
+            "https://github.com/ttran6943/Pomodoro-Timer",
+            "GitHub Link"
+          )}
         </div>
       </div>
     );
-  }
+  };
 
   const backEndList = () => {
     return (
       <div className="row backend">
         <div className="col-4">
           <img className="col-12 stack-images" src={movies} />
-          <p className="thumbnail-text">WeLoveMovies</p>
+          <h5 className="thumbnail-text">WeLoveMovies</h5>
+          <div className="col mx-3">
+            {linkedButton(
+              "https://ancient-temple-59879.herokuapp.com/",
+              "Live Demo"
+            )}
+          </div>
+          <div className="col my-3">
+            {linkedButton(
+              "https://github.com/ttran6943/WeLoveMovies-back-end",
+              "Github Link(Back-End)"
+            )}{" "}
+          </div>
+          <div className="col my-3">
+            {linkedButton(
+              "https://github.com/ttran6943/WeLoveMovies-front-end",
+              "Github Link(Front-End)"
+            )}
+          </div>
         </div>
         <div className="col-4">
           <img className="col-12 stack-images" src={grubdash} />
-          <p className="thumbnail-text">GrubDash</p>
+          <h5 className="thumbnail-text">GrubDash</h5>
+          {linkedButton(
+            "https://github.com/ttran6943/thinkful-grubdash",
+            "GitHub Link"
+          )}
         </div>
       </div>
     );
-  }
+  };
 
   const toggleButtons = () => {
     if (frontIsShowing === true) {
       return (
         <div class="btn-group mb-3" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary" onClick={handleToggle}>
-            Front-End
-          </button>
           <button
             type="button"
-            class="btn btn-light"
+            class="btn btn-secondary"
             onClick={handleToggle}
           >
+            Front-End
+          </button>
+          <button type="button" class="btn btn-light" onClick={handleToggle}>
             Back-End
           </button>
         </div>
@@ -73,27 +117,28 @@ function Projects() {
     } else {
       return (
         <div class="btn-group mb-3" role="group" aria-label="Basic example">
-          <button
-            type="button"
-            class="btn btn-light"
-            onClick={handleToggle}
-          >
+          <button type="button" class="btn btn-light" onClick={handleToggle}>
             Front-End
           </button>
-          <button type="button" class="btn btn-secondary" onClick={handleToggle}>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            onClick={handleToggle}
+          >
             Back-End
           </button>
         </div>
       );
     }
-  }
+  };
 
   return (
     <StyleRoot>
       <div className="projects-page mx-4 my-3">
         <h3 style={animationStyles.fadeIn}>Projects</h3>
-        <div className="text-center" style={animationStyles.fadeIn}>{toggleButtons()}
-        {frontIsShowing == true ? frontEndList() : backEndList()}
+        <div className="text-center" style={animationStyles.fadeIn}>
+          {toggleButtons()}
+          {frontIsShowing == true ? frontEndList() : backEndList()}
         </div>
       </div>
     </StyleRoot>

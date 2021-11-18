@@ -3,6 +3,9 @@ import { StyleRoot } from "radium";
 import animationStyles from "../Components/animationStyles";
 import "../App.css";
 import resume from "../documents/resume.pdf";
+import linkedButton from "../Components/buttonLink";
+
+const resumeURL = "https://docs.google.com/document/d/1yNQiRzUNh3V6YQ8e_yM0tm3YADzh0sVw/edit?usp=sharing&ouid=101215602755905117141&rtpof=true&sd=true";
 
 function Resume() {
   const stackList = () => {
@@ -37,23 +40,6 @@ function Resume() {
     );
   }
 
-  const linkedInButton = () => {
-    return (
-      <button
-        onClick={
-          (Event = () =>
-            window.open(
-              "https://docs.google.com/document/d/1yNQiRzUNh3V6YQ8e_yM0tm3YADzh0sVw/edit?usp=sharing&ouid=101215602755905117141&rtpof=true&sd=true"
-            ))
-        }
-        type="button"
-        class="btn btn-secondary"
-      >
-        Link to Resume
-      </button>
-    );
-  }
-
   const embeddedPdf = () => {
     return (
       <object
@@ -78,7 +64,7 @@ function Resume() {
         <div className="row">
           <div className="col-3 stack-list">
             {stackList()}
-            {linkedInButton()}
+            {linkedButton(resumeURL, "Link to Resume")}
           </div>
           {embeddedPdf()}
         </div>
