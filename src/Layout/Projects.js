@@ -20,6 +20,17 @@ function Projects() {
     }
   };
 
+  const inProgressList = () => {
+    return (
+      <>
+        <h4>Projects in Progress</h4>
+        <ul>
+          <li>Periodic Tables: Restaurant Reservation System</li>
+        </ul>
+      </>
+    );
+  };
+
   const frontEndList = () => {
     return (
       <div className="row">
@@ -134,9 +145,10 @@ function Projects() {
 
   return (
     <StyleRoot>
-      <div className="projects-page mx-4 my-3">
-        <h3 style={animationStyles.fadeIn}>Projects</h3>
-        <div className="text-center" style={animationStyles.fadeIn}>
+      <div className="projects-page mx-4 my-3" style={animationStyles.fadeIn}>
+        <h3>Projects</h3>
+        {inProgressList()}
+        <div className="text-center">
           {toggleButtons()}
           {frontIsShowing == true ? frontEndList() : backEndList()}
         </div>
