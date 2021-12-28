@@ -24,8 +24,16 @@ function AboutMe() {
             programming. My goal is to one day be a part of a life-changing
             programming project for the bettering of our daily lives.
           </p>
-          <p>Aside from Geology and coding, some other of my interest are:</p>
-          <p>I am interested in:</p>
+          <p>
+            I am also a Thinkful Software Engineering Immersion Bootcamp
+            graduate. At Thinkful, I had the opportunity to push my programming
+            skills to the limit and develop JavaScript-based real-world
+            applications that I would never have thought I would be able to do
+            before. As a recent graduate, I am driven to learn more. Currently,
+            I am furthering my full-stack development capabilities with
+            JavaScript as well as learning more of Python.
+          </p>
+          <p>Aside from Geology and coding, some other of my interests are:</p>
           <ul>
             <li>Hiking and camping</li>
             <li>
@@ -49,11 +57,21 @@ function AboutMe() {
             <li>Lay It Down - Illenium, Krewella, SLANDER</li>
             <li>Returning to You - Seven Lions, Andrew Bayer, Alison May</li>
           </ul>
+          <h5>Movies</h5>
+          <ul>
+            <li>Inception</li>
+            <li>Shang Chi</li>
+            <li>A Beautiful Mind</li>
+          </ul>
         </div>
-        <img className="col-lg-4 col-md-3 col-sm-4 my-4 mx-3" src={headshot} height="100%" />
+        <img
+          className="col-lg-4 col-md-3 col-sm-4 my-4 mx-3"
+          src={headshot}
+          height="100%"
+        />
       </div>
     );
-  }
+  };
 
   return <StyleRoot>{aboutMeText()}</StyleRoot>;
 }
