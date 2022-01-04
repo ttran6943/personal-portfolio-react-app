@@ -1,7 +1,7 @@
 .home-greet {
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 510px;
+  padding-bottom: 50px;
 }
 
 .Name, .Subname {
@@ -10,6 +10,11 @@
 
 body {
   padding-bottom: 60px;
+}
+
+.toShadow {
+  color: grey;
+  box-shadow: 0px 0px 15px;
 }
 
 .greeting-text {
