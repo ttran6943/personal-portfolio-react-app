@@ -9,6 +9,7 @@ import grubdash from "../imgs/GrubDash.png";
 import "../App.css";
 import linkedButton from "../Components/buttonLink";
 import resSys from "../imgs/resres-system-thumbnail.png";
+import shoppingClone from "../imgs/shopping-thumbnail.png";
 
 function Projects() {
   // const [frontIsShowing, setFrontIsShowing] = useState(true);
@@ -164,6 +165,30 @@ function Projects() {
               <div className="col mx-3">
                 {linkedButton(
                   "https://github.com/ttran6943/Periodic-Tables---Res-System",
+                  "GitHub Link"
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-12 my-3">
+            <img
+              className="col-12 stack-images toShadow"
+              alt="restaurant-reservation-system"
+              src={shoppingClone}
+            />
+            <h5 className="thumbnail-text my-3">
+              The Best Shop: Shopping Clone (IN PROGRESS)
+            </h5>
+            <div className="row">
+              <div className="col">
+                {linkedButton(
+                  "https://the-best-store1.herokuapp.com/",
+                  "Live Demo"
+                )}
+              </div>
+              <div className="col mx-3">
+                {linkedButton(
+                  "https://github.com/ttran6943/The-Best-Store",
                   "GitHub Link"
                 )}
               </div>
