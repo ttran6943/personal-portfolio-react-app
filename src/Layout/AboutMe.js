@@ -12,8 +12,9 @@ function AboutMe() {
         <div className="col-lg-7 col-md-7 col-sm-6 about-me mx-4 my-3">
           <h3>About Me</h3>
           <p>
-            Hi there! My name is Tony and I am a full-stack software developer
-            based in Los Angeles, California.
+            Hi there! My name is Tony and I am a Full-Stack Developer, currently
+            employed as a Jr. Front-End Developer at InvestCloud in the Los
+            Angeles Area.
           </p>
           <p>
             I am UCLA Bruin pursuing a degree in Geology, B.S. While I share
@@ -42,6 +43,7 @@ function AboutMe() {
             <li>Volunteering and community service</li>
             <li>Spending quality time with family and friends</li>
           </ul>
+          <p>Please do not hesitate to reach out to me!</p>
           <h4>My goals are:</h4>
           <ul>
             <li>

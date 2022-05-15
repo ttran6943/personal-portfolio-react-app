@@ -5,9 +5,24 @@ import "../App.css";
 import resume from "../documents/resume.pdf";
 import linkedButton from "../Components/buttonLink";
 
-const resumeURL = "https://docs.google.com/document/d/1yNQiRzUNh3V6YQ8e_yM0tm3YADzh0sVw/edit?usp=sharing&ouid=101215602755905117141&rtpof=true&sd=true";
+const resumeURL =
+  "https://docs.google.com/document/d/1yNQiRzUNh3V6YQ8e_yM0tm3YADzh0sVw/edit?usp=sharing&ouid=101215602755905117141&rtpof=true&sd=true";
 
 function Resume() {
+  const workList = () => {
+    return (
+      <>
+        <h3>Work Experience</h3>
+        <h5>InvestCloud (Apr 2022 - )</h5>
+        <ul>
+          <li>
+            Jr. Front End Developer
+          </li>
+        </ul>
+      </>
+    );
+  };
+
   const stackList = () => {
     return (
       <>
@@ -38,7 +53,7 @@ function Resume() {
         </ul>
       </>
     );
-  }
+  };
 
   const embeddedPdf = () => {
     return (
@@ -56,13 +71,14 @@ function Resume() {
         </p>
       </object>
     );
-  }
+  };
 
   return (
     <StyleRoot>
       <div className="resume-page mx-4 my-3" style={animationStyles.fadeIn}>
         <div className="row">
           <div className="col-lg-3 col-md-3 col-sm-12 stack-list">
+            {workList()}
             {stackList()}
             {linkedButton(resumeURL, "Link to Resume")}
           </div>
@@ -71,6 +87,6 @@ function Resume() {
       </div>
     </StyleRoot>
   );
-}
+};
 
 export default Resume;
